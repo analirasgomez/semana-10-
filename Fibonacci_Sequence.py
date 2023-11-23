@@ -8,8 +8,9 @@ def fibonacci (n):
     else: 
         return fibonacci (n-1) + fibonacci (n-2)
 
-numero = float (input("Posición que quieres de la frecuencia de Fibonacci:"))
+numero = int (input("Posición que quieres de la frecuencia de Fibonacci:"))
 print (fibonacci(numero))
 
-def fibonacci (n):
-    while fibonacci (n-1) + fibonacci (n-2):
+# Obtener la secuencia de Fibonacci hasta el numro dado.
+result = [fibonacci(i) for i in range(numero+1)]
+print(result)
